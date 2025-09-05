@@ -4,31 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coffee Corner</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to Coffee Corner</h1>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Coffee Corner</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hello! I’m a coffee shop enthusiast who has visited many different cafés.
-         Coffee Corner is my place to share thoughts on coffee shops I’ve explored.</p>
-    </<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coffee Corner</title>
-</head>
-<body>
-  <header>
-    <h1>Welcome to Coffee Corner</h1>
-  </header>
+  <section class="hero">
+    <div class="container">
+      <h1>Welcome to Coffee Corner</h1>
+      <p>Discover honest reviews and cozy vibes from coffee shops everywhere.</p>
+      <a href="#reviews" class="btn">See My Reviews</a>
+    </div>
+  </section>
 
-  <main>
-    <section id="about">
+  <main class="container">
+    <section id="about" class="card">
       <h2>About Me</h2>
       <p>Hello! I’m a coffee shop enthusiast who has visited many different cafés.
          Coffee Corner is my place to share thoughts on coffee shops I’ve explored.</p>
@@ -36,11 +34,25 @@
 
     <section id="reviews">
       <h2>My Reviews</h2>
-      <p>Coming soon… I’ll be posting reviews of my favorite coffee shops here!</p>
+      <div class="grid">
+        <div class="card">
+          <img src="https://source.unsplash.com/400x300/?coffee" alt="Coffee shop">
+          <h3>Example Coffee Shop</h3>
+          <p>A cozy place with rich espresso and friendly staff.</p>
+          <span class="tag">Favorite</span>
+        </div>
+        <div class="card">
+          <img src="https://source.unsplash.com/400x300/?cafe" alt="Cafe">
+          <h3>Another Cafe</h3>
+          <p>Bright and airy with delicious pastries.</p>
+          <span class="tag">Pastries</span>
+        </div>
+      </div>
+      <p class="muted">More cafés and city guides coming soon…</p>
     </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <p>© 2025 Coffee Corner</p>
   </footer>
 </body>
