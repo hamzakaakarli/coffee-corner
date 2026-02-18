@@ -94,3 +94,10 @@ h2{ margin:28px 0 14px; }
   margin-top:36px; background:#f3e7db; border-top:1px solid #eadfd3; color:#6a594f;
   padding:16px 0; text-align:center;
 }
+.card img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
