@@ -238,9 +238,13 @@ section > h2::after {
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(201,150,90,0.18);
   border-radius: 6px;
-  padding: 24px 26px;
+  padding: 28px 26px;
   position: relative;
   transition: background 0.2s, border-color 0.2s;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .criteria-list li:hover {
   background: rgba(201,150,90,0.07);
@@ -267,7 +271,7 @@ section > h2::after {
 }
 
 .criteria-list li span.desc {
-  color: #9e8472;
+  color: #d4bfa6;
   font-size: 0.88rem;
   line-height: 1.65;
   font-weight: 300;
@@ -300,14 +304,16 @@ section > h2::after {
 .card img {
   display: block;
   width: 100%;
-  height: 200px;
+  height: 240px;
   object-fit: cover;
 }
 
 .card-body {
-  padding: 18px 20px 20px;
+  padding: 20px 20px 22px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   flex: 1;
 }
 
@@ -325,21 +331,22 @@ section > h2::after {
   font-weight: 300;
   line-height: 1.6;
   flex: 1;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
+  text-align: center;
 }
 
 .tag {
   display: inline-block;
-  background: transparent;
-  color: var(--accent);
-  border: 1px solid var(--accent);
-  font-weight: 600;
-  font-size: 0.68rem;
-  letter-spacing: 1.5px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  padding: 4px 10px;
-  border-radius: 2px;
-  align-self: flex-start;
+  padding: 6px 14px;
+  border-radius: 999px;
+  align-self: center;
+  text-align: center;
 }
 
 /* ===== Footer ===== */
