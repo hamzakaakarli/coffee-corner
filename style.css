@@ -91,19 +91,32 @@ h2 {
   gap: 12px;
 }
 
+/* Clickable card title (keeps your "good" typography) */
 .card-title-btn {
   background: none;
   border: none;
   padding: 0;
+  margin: 0;
+
   font-family: "Playfair Display", serif;
   font-size: 1.4rem;
   font-weight: 700;
+  line-height: 1.2;
+
   text-align: left;
   cursor: pointer;
+  color: inherit;
 }
 
 .card-title-btn:hover {
   text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.card-title-btn:focus-visible {
+  outline: 2px solid rgba(0,0,0,0.35);
+  outline-offset: 4px;
+  border-radius: 10px;
 }
 
 .card-title {
@@ -116,8 +129,7 @@ h2 {
   opacity: 0.7;
 }
 
-/* MODAL */
-
+/* MODAL (single clean version) */
 .modal {
   display: none;
   position: fixed;
@@ -138,99 +150,10 @@ h2 {
 .modal-card {
   position: relative;
   background: white;
-  width: min(500px, 90%);
-  margin: 10vh auto;
-  padding: 30px;
-  border-radius: 18px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
-}
-
-.modal-close {
-  position: absolute;
-  top: 12px;
-  right: 16px;
-  background: none;
-  border: none;
-  font-size: 28px;
-  cursor: pointer;
-}
-
-.modal-card h3 {
-  font-family: "Playfair Display", serif;
-  font-size: 1.6rem;
-  margin-bottom: 8px;
-}
-
-.modal-location {
-  opacity: 0.7;
-  margin-bottom: 12px;
-}
-
-.modal-rating {
-  font-weight: 600;
-  margin-bottom: 16px;
-}
-
-.modal-description {
-  line-height: 1.6;
-}
-
-.site-footer {
-  text-align: center;
-  padding: 40px 0;
-  margin-top: 60px;
-  font-size: 0.9rem;
-  opacity: 0.6;
-}
-/* Make the clickable title look like your old card title */
-.card-title-btn {
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  font: inherit;
-  color: inherit;
-  cursor: pointer;
-  text-align: left;
-  display: inline;
-}
-
-.card-title-btn:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-.card-title-btn:focus-visible {
-  outline: 2px solid rgba(0,0,0,0.35);
-  outline-offset: 4px;
-  border-radius: 10px;
-}
-
-/* Modal */
-.modal {
-  position: fixed;
-  inset: 0;
-  display: none;
-  z-index: 999;
-}
-
-.modal.is-open {
-  display: block;
-}
-
-.modal-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.45);
-}
-
-.modal-card {
-  position: relative;
   width: min(560px, calc(100% - 32px));
   margin: 10vh auto 0;
-  background: #fff;
+  padding: 26px 22px;
   border-radius: 18px;
-  padding: 20px 18px;
   box-shadow: 0 20px 60px rgba(0,0,0,0.25);
 }
 
@@ -238,12 +161,12 @@ h2 {
   position: absolute;
   top: 10px;
   right: 12px;
-  border: none;
   background: none;
+  border: none;
   font-size: 28px;
   cursor: pointer;
   line-height: 1;
-  opacity: 0.7;
+  opacity: 0.75;
   color: inherit;
 }
 
@@ -252,6 +175,8 @@ h2 {
 }
 
 .modal-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.6rem;
   margin: 0 0 6px 0;
 }
 
@@ -270,9 +195,18 @@ h2 {
   border-radius: 999px;
   background: rgba(0,0,0,0.06);
   font-size: 0.95rem;
+  font-weight: 600;
 }
 
 .modal-description {
   margin: 0;
   line-height: 1.6;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 40px 0;
+  margin-top: 60px;
+  font-size: 0.9rem;
+  opacity: 0.6;
 }
