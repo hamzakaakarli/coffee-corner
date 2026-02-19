@@ -450,3 +450,40 @@ section > h2::after {
   margin: 0;
   line-height: 1.6;
 }
+.card-body {
+  display: grid;
+  gap: 10px;
+}
+
+.card-title-btn {
+  display: inline-block;
+  width: fit-content;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  font-family: "Playfair Display", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.15;
+
+  cursor: pointer;
+  text-align: left;
+}
+
+.card-title-btn:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.card-title-btn:focus-visible {
+  outline: 2px solid rgba(0,0,0,0.35);
+  outline-offset: 4px;
+  border-radius: 10px;
+}
+.tag {
+  width: fit-content;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
