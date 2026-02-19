@@ -4,121 +4,318 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coffee Corner</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <h1 class="brand">Coffee Corner</h1>
-    <nav class="nav">
-      <a href="#about">About</a>
-      <a href="#criteria">Criteria</a>
-      <a href="#reviews">Reviews</a>
-    </nav>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="container">
-    <p class="hero-eyebrow">A Coffee Journal</p>
-    <h1>Good coffee,<br><em>honest reviews.</em></h1>
-    <p class="hero-sub">Independent reviews of coffee shops across Michigan and beyond.</p>
-  </div>
-</section>
-
-<main class="container">
-
-<section id="reviews">
-  <h2>My Reviews</h2>
-
-  <div class="grid">
-
-    <!-- SHINOLA (CLICKABLE) -->
-    <div class="card">
-      <img src="images/shinolacoffeeannarbor.jpeg" alt="Shinola Coffee Ann Arbor">
-      <div class="card-body">
-        <button
-          class="card-title-btn"
-          type="button"
-          data-name="Shinola Coffee"
-          data-location="Ann Arbor"
-          data-rating="4.6"
-          data-description="Ann Arbor spot with clean design and balanced espresso drinks. Strong third-space energy."
-        >
-          Shinola Coffee
-        </button>
-        <span class="tag">Ann Arbor</span>
-      </div>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Coffee Corner</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#criteria">Criteria</a>
+        <a href="#reviews">Reviews</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- NON CLICKABLE FOR NOW -->
-    <div class="card">
-      <img src="https://source.unsplash.com/400x300/?coffee" alt="Socotra Coffee House">
-      <div class="card-body">
-        <h3 class="card-title">Socotra Coffee House</h3>
-        <span class="tag">Ann Arbor</span>
-      </div>
+  <section class="hero">
+    <div class="container">
+      <p class="hero-eyebrow">A Coffee Journal</p>
+      <h1>Good coffee,<br><em>honest reviews.</em></h1>
+      <p>Independent reviews of coffee shops across Michigan and beyond — scored for taste, value, comfort, and soul.</p>
+      <a href="#reviews" class="btn">See My Reviews</a>
     </div>
+  </section>
 
+  <main class="container">
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a long-time coffee shop enthusiast who's spent years exploring cafés across the U.S. and abroad.
+        I treat cafés as a true <strong>third space</strong> — part study hall, part social hub — where I learn, read, and meet friends.
+        I'm drawn to vibrant atmospheres that spark conversation and help me stay productive, and I review each spot with both comfort and craft in mind.
+      </p>
+    </section>
+
+    <section id="criteria" class="criteria">
+      <h2>Ranking Criteria</h2>
+      <p>
+        Each coffee shop is visited multiple times and evaluated over time. My goal is to capture both first impressions
+        and consistency across visits. Every category is scored out of 10, and a shop's overall rating is averaged
+        across all visits — rewarding consistency as much as a great first impression.
+      </p>
+      <ul class="criteria-list">
+        <li>
+          <span class="score-badge">out of 10</span>
+          <strong>Coffee Taste</strong>
+          <span class="desc">Does it sing? Scored on complexity, balance, temperature, and that all-important first sip. A 10 means you'd cross town for it.</span>
+        </li>
+        <li>
+          <span class="score-badge">out of 10</span>
+          <strong>Value</strong>
+          <span class="desc">Is the price fair for what lands on the table? Drinks, food, and the feeling of walking away either satisfied or shortchanged all factor in.</span>
+        </li>
+        <li>
+          <span class="score-badge">out of 10</span>
+          <strong>Seat &amp; Stay</strong>
+          <span class="desc">Are the chairs an afterthought or an invitation? Scored on comfort, table space, noise level, and how long you genuinely want to linger.</span>
+        </li>
+        <li>
+          <span class="score-badge">out of 10</span>
+          <strong>Cleanliness</strong>
+          <span class="desc">Counters, bathrooms, floors, cups. Grime is a dealbreaker. Spotless is the baseline; extra credit goes to shops that clearly take pride in every corner.</span>
+        </li>
+        <li>
+          <span class="score-badge">out of 10</span>
+          <strong>Atmosphere &amp; Soul</strong>
+          <span class="desc">Does the space have a personality? Does the lighting, music, and decor make you feel something — or does it feel like a beige waiting room with an espresso machine?</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="reviews">
+      <h2>My Reviews</h2>
+      <div class="grid">
+
+        <div class="card">
+          <img src="images/shinolacoffeeannarbor.jpeg" alt="Shinola Coffee Ann Arbor">
+          <div class="card-body">
+            <button
+              class="card-title-btn"
+              type="button"
+              data-name="Shinola Coffee"
+              data-location="Ann Arbor"
+              data-rating="TBD"
+              data-description="Ann Arbor spot with clean design and balanced espresso drinks."
+            >Shinola Coffee</button>
+            <span class="tag">Ann Arbor</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://source.unsplash.com/400x300/?yemeni-coffee,ann-arbor" alt="Socotra Coffee House">
+          <div class="card-body">
+            <button
+              class="card-title-btn"
+              type="button"
+              data-name="Socotra Coffee House"
+              data-location="Ann Arbor"
+              data-rating="TBD"
+              data-description="Warm Yemeni flavors and spices; great for lingering with friends."
+            >Socotra Coffee House</button>
+            <span class="tag">Ann Arbor</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://source.unsplash.com/400x300/?yemeni,coffee" alt="Qahwah House Ann Arbor">
+          <div class="card-body">
+            <button
+              class="card-title-btn"
+              type="button"
+              data-name="Qahwah House Ann Arbor"
+              data-location="Ann Arbor"
+              data-rating="TBD"
+              data-description="Classic Yemeni coffee and pastries; lively community vibe."
+            >Qahwah House</button>
+            <span class="tag">Ann Arbor</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://source.unsplash.com/400x300/?cafe,ann-arbor" alt="Mynt House">
+          <div class="card-body">
+            <button
+              class="card-title-btn"
+              type="button"
+              data-name="Mynt House"
+              data-location="Ann Arbor"
+              data-rating="TBD"
+              data-description="Bright, modern café — good for study sessions and meetups."
+            >Mynt House</button>
+            <span class="tag">Ann Arbor</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://source.unsplash.com/400x300/?latte,ann-arbor" alt="Moka and Co">
+          <div class="card-body">
+            <button
+              class="card-title-btn"
+              type="button"
+              data-name="Moka &amp; Co"
+              data-location="Ann Arbor"
+              data-rating="TBD"
+              data-description="Comfort-forward space with smooth lattes and friendly service."
+            >Moka &amp; Co</button>
+            <span class="tag">Ann Arbor</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://source.unsplash.com/400x300/?chai,ann-arbor" alt="Cups n Chai">
+          <div class="card-body">
+            <button
+              class="card-title-btn"
+              type="button"
+              data-name="Cups n Chai"
+              data-location="Ann Arbor"
+              data-rating="TBD"
+              data-description="Cozy chai specialist; a relaxing nook for reading or chatting."
+            >Cups n Chai</button>
+            <span class="tag">Ann Arbor</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://source.unsplash.com/400x300/?yemen,coffee" alt="Jabal">
+          <div class="card-body">
+            <button
+              class="card-title-btn"
+              type="button"
+              data-name="Jabal"
+              data-location="Dearborn"
+              data-rating="TBD"
+              data-description="Rich traditional brews and sweets; energetic Dearborn staple."
+            >Jabal</button>
+            <span class="tag">Dearborn</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://source.unsplash.com/400x300/?qishr,coffee" alt="Qahwah House West Dearborn">
+          <div class="card-body">
+            <button
+              class="card-title-btn"
+              type="button"
+              data-name="Qahwah House (West)"
+              data-location="West Dearborn"
+              data-rating="TBD"
+              data-description="Signature Yemeni drinks with ample seating for groups."
+            >Qahwah House (West)</button>
+            <span class="tag">West Dearborn</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://source.unsplash.com/400x300/?mocha,coffee" alt="Haraz">
+          <div class="card-body">
+            <button
+              class="card-title-btn"
+              type="button"
+              data-name="Haraz"
+              data-location="Dearborn"
+              data-rating="TBD"
+              data-description="Stylish space, modern menu — great atmosphere for a third-space vibe."
+            >Haraz</button>
+            <span class="tag">Dearborn</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://source.unsplash.com/400x300/?coffee,rochester-hills" alt="Mezaj Coffee">
+          <div class="card-body">
+            <button
+              class="card-title-btn"
+              type="button"
+              data-name="Mezaj Coffee"
+              data-location="Rochester Hills"
+              data-rating="TBD"
+              data-description="Quiet tables and flavorful drinks; solid study-friendly option."
+            >Mezaj Coffee</button>
+            <span class="tag">Rochester Hills</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://source.unsplash.com/400x300/?coffee,brooklyn" alt="Qahwah House Brooklyn">
+          <div class="card-body">
+            <button
+              class="card-title-btn"
+              type="button"
+              data-name="Qahwah House Brooklyn"
+              data-location="Brooklyn"
+              data-rating="TBD"
+              data-description="Brooklyn outpost with the classics — busy, social, and aromatic."
+            >Qahwah House</button>
+            <span class="tag">Brooklyn</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Coffee Corner</p>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal" id="shopModal" aria-hidden="true">
+    <div class="modal-overlay" data-close="true"></div>
+
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" type="button" aria-label="Close" data-close="true">×</button>
+
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <p class="modal-subtitle" id="modalSubtitle"></p>
+
+      <div class="modal-meta">
+        <span class="modal-rating" id="modalRating"></span>
+      </div>
+
+      <p class="modal-description" id="modalDescription"></p>
+    </div>
   </div>
-</section>
 
-</main>
+  <script>
+    const modal = document.getElementById("shopModal");
+    const titleEl = document.getElementById("modalTitle");
+    const subtitleEl = document.getElementById("modalSubtitle");
+    const ratingEl = document.getElementById("modalRating");
+    const descEl = document.getElementById("modalDescription");
 
-<footer class="site-footer">
-  <p>© 2025 Coffee Corner</p>
-</footer>
-
-
-<!-- MODAL -->
-<div class="modal" id="shopModal">
-  <div class="modal-overlay" data-close="true"></div>
-
-  <div class="modal-card">
-    <button class="modal-close" data-close="true">×</button>
-
-    <h3 id="modalTitle"></h3>
-    <p class="modal-location" id="modalSubtitle"></p>
-    <p class="modal-rating" id="modalRating"></p>
-    <p class="modal-description" id="modalDescription"></p>
-  </div>
-</div>
-
-
-<script>
-  const modal = document.getElementById("shopModal");
-  const titleEl = document.getElementById("modalTitle");
-  const subtitleEl = document.getElementById("modalSubtitle");
-  const ratingEl = document.getElementById("modalRating");
-  const descEl = document.getElementById("modalDescription");
-
-  document.addEventListener("click", function (e) {
-
-    const btn = e.target.closest(".card-title-btn");
-
-    if (btn) {
-      titleEl.textContent = btn.dataset.name;
-      subtitleEl.textContent = btn.dataset.location;
-      ratingEl.textContent = "Rating: " + btn.dataset.rating;
-      descEl.textContent = btn.dataset.description;
+    function openModal(btn) {
+      titleEl.textContent = btn.dataset.name || "";
+      subtitleEl.textContent = btn.dataset.location || "";
+      ratingEl.textContent = btn.dataset.rating ? `Rating: ${btn.dataset.rating}` : "";
+      descEl.textContent = btn.dataset.description || "";
 
       modal.classList.add("is-open");
+      modal.setAttribute("aria-hidden", "false");
       document.body.style.overflow = "hidden";
-      return;
     }
 
-    if (e.target.dataset.close === "true") {
+    function closeModal() {
       modal.classList.remove("is-open");
+      modal.setAttribute("aria-hidden", "true");
       document.body.style.overflow = "";
     }
-  });
-</script>
+
+    document.addEventListener("click", (e) => {
+      const btn = e.target.closest(".card-title-btn");
+      if (btn) {
+        openModal(btn);
+        return;
+      }
+
+      if (e.target.dataset.close === "true") {
+        closeModal();
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && modal.classList.contains("is-open")) {
+        closeModal();
+      }
+    });
+  </script>
 
 </body>
 </html>
