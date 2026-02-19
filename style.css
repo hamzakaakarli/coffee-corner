@@ -223,12 +223,21 @@ section > h2::after {
   line-height: 1.8;
 }
 
+/* ✅ Centered, symmetrical criteria cards */
 .criteria-list {
   list-style: none;
   padding: 0;
+
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
+
+  /* Symmetrical cards with clean centering */
+  grid-template-columns: repeat(auto-fit, 260px);
+  justify-content: center;
+
+  /* Keeps the grid visually centered within the large dark box */
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .criteria-list li {
@@ -237,15 +246,23 @@ section > h2::after {
   border-radius: 6px;
   padding: 28px 26px;
   position: relative;
-  transition: background 0.2s, border-color 0.2s;
   text-align: center;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  /* ✅ Smoother hover animation */
+  transition: transform 0.22s ease, background 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+  will-change: transform;
 }
+
+/* ✅ A subtle “lift” + glow */
 .criteria-list li:hover {
-  background: rgba(201,150,90,0.07);
-  border-color: rgba(201,150,90,0.35);
+  transform: translateY(-4px);
+  background: rgba(201,150,90,0.08);
+  border-color: rgba(201,150,90,0.38);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.25);
 }
 
 .criteria-list li .score-badge {
@@ -478,4 +495,19 @@ section > h2::after {
   .criteria { padding: 36px 28px; }
   .hero { padding: 70px 0 56px; }
   .nav a { margin-left: 16px; }
+
+  /* Ensures a comfortable layout on small screens */
+  .criteria-list { grid-template-columns: 1fr; max-width: 420px; }
+}
+
+/* ===== Motion Accessibility ===== */
+@media (prefers-reduced-motion: reduce) {
+  .criteria-list li,
+  .card,
+  .btn {
+    transition: none !important;
+  }
+  .modal-card {
+    animation: none !important;
+  }
 }
