@@ -179,7 +179,7 @@ section > h2::after {
 .criteria {
   background: var(--espresso);
   border-radius: 6px;
-  padding: 70px 56px 52px;
+  padding: 56px 52px;
   position: relative;
   overflow: hidden;
 }
@@ -206,12 +206,12 @@ section > h2::after {
 .criteria h2 {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: clamp(28px, 3.6vw, 40px);
-  color: var(--gold);
-  border: none;
-  padding: 0;
-  margin-bottom: 12px;
-  text-align: center;
   font-weight: 800;
+  color: var(--gold);
+  padding-bottom: 14px;
+  margin-bottom: 24px;
+  text-align: center;
+  border-bottom: 2px solid rgba(201,150,90,0.4);
 }
   
 .criteria > p {
