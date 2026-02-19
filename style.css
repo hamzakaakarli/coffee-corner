@@ -231,14 +231,32 @@ section > h2::after {
   display: grid;
   gap: 24px;
 
-  /* Symmetrical cards with clean centering */
-  grid-template-columns: repeat(auto-fit, 260px);
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
   justify-content: center;
 
-  /* Keeps the grid visually centered within the large dark box */
-  max-width: 900px;
+  max-width: 920px;
   margin: 0 auto;
 }
+
+  .criteria-list .criteria-wide {
+  grid-column: 1 / -1;
+}
+
+  .criteria-list .criteria-wide .desc {
+  max-width: 70ch;
+}
+
+  @media (max-width: 640px) {
+  .criteria-list {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+  }
+
+  .criteria-list .criteria-wide {
+    grid-column: auto;
+  }
+}
+
 
 .criteria-list li {
   background: rgba(255,255,255,0.04);
