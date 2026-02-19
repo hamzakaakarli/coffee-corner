@@ -11,8 +11,8 @@
 </head>
 <body>
 
-<header class="site-header">
-   <div class="container header-inner">
+  <header class="site-header">
+    <div class="container header-inner">
       <h1 class="brand">Coffee Corner</h1>
       <nav class="nav">
         <a href="#about">About</a>
@@ -44,7 +44,7 @@
 
     <section id="criteria" class="criteria">
       <h2>Ranking Criteria</h2>
-      <p>
+      <p style="max-width:640px; color:#5a5047; margin-bottom: 28px;">
         Each coffee shop is visited multiple times and evaluated over time. My goal is to capture both first impressions
         and consistency across visits. Every category is scored out of 10, and a shop's overall rating is averaged
         across all visits — rewarding consistency as much as a great first impression.
@@ -85,9 +85,7 @@
         <div class="card">
           <img src="images/shinolacoffeeannarbor.jpeg" alt="Shinola Coffee Ann Arbor">
           <div class="card-body">
-            <button
-              class="card-title-btn"
-              type="button"
+            <button class="card-title-btn" type="button"
               data-name="Shinola Coffee"
               data-location="Ann Arbor"
               data-rating="TBD"
@@ -100,9 +98,7 @@
         <div class="card">
           <img src="https://source.unsplash.com/400x300/?yemeni-coffee,ann-arbor" alt="Socotra Coffee House">
           <div class="card-body">
-            <button
-              class="card-title-btn"
-              type="button"
+            <button class="card-title-btn" type="button"
               data-name="Socotra Coffee House"
               data-location="Ann Arbor"
               data-rating="TBD"
@@ -115,9 +111,7 @@
         <div class="card">
           <img src="https://source.unsplash.com/400x300/?yemeni,coffee" alt="Qahwah House Ann Arbor">
           <div class="card-body">
-            <button
-              class="card-title-btn"
-              type="button"
+            <button class="card-title-btn" type="button"
               data-name="Qahwah House Ann Arbor"
               data-location="Ann Arbor"
               data-rating="TBD"
@@ -130,9 +124,7 @@
         <div class="card">
           <img src="https://source.unsplash.com/400x300/?cafe,ann-arbor" alt="Mynt House">
           <div class="card-body">
-            <button
-              class="card-title-btn"
-              type="button"
+            <button class="card-title-btn" type="button"
               data-name="Mynt House"
               data-location="Ann Arbor"
               data-rating="TBD"
@@ -145,9 +137,7 @@
         <div class="card">
           <img src="https://source.unsplash.com/400x300/?latte,ann-arbor" alt="Moka and Co">
           <div class="card-body">
-            <button
-              class="card-title-btn"
-              type="button"
+            <button class="card-title-btn" type="button"
               data-name="Moka &amp; Co"
               data-location="Ann Arbor"
               data-rating="TBD"
@@ -160,9 +150,7 @@
         <div class="card">
           <img src="https://source.unsplash.com/400x300/?chai,ann-arbor" alt="Cups n Chai">
           <div class="card-body">
-            <button
-              class="card-title-btn"
-              type="button"
+            <button class="card-title-btn" type="button"
               data-name="Cups n Chai"
               data-location="Ann Arbor"
               data-rating="TBD"
@@ -175,9 +163,7 @@
         <div class="card">
           <img src="https://source.unsplash.com/400x300/?yemen,coffee" alt="Jabal">
           <div class="card-body">
-            <button
-              class="card-title-btn"
-              type="button"
+            <button class="card-title-btn" type="button"
               data-name="Jabal"
               data-location="Dearborn"
               data-rating="TBD"
@@ -190,9 +176,7 @@
         <div class="card">
           <img src="https://source.unsplash.com/400x300/?qishr,coffee" alt="Qahwah House West Dearborn">
           <div class="card-body">
-            <button
-              class="card-title-btn"
-              type="button"
+            <button class="card-title-btn" type="button"
               data-name="Qahwah House (West)"
               data-location="West Dearborn"
               data-rating="TBD"
@@ -205,9 +189,7 @@
         <div class="card">
           <img src="https://source.unsplash.com/400x300/?mocha,coffee" alt="Haraz">
           <div class="card-body">
-            <button
-              class="card-title-btn"
-              type="button"
+            <button class="card-title-btn" type="button"
               data-name="Haraz"
               data-location="Dearborn"
               data-rating="TBD"
@@ -220,9 +202,7 @@
         <div class="card">
           <img src="https://source.unsplash.com/400x300/?coffee,rochester-hills" alt="Mezaj Coffee">
           <div class="card-body">
-            <button
-              class="card-title-btn"
-              type="button"
+            <button class="card-title-btn" type="button"
               data-name="Mezaj Coffee"
               data-location="Rochester Hills"
               data-rating="TBD"
@@ -235,9 +215,7 @@
         <div class="card">
           <img src="https://source.unsplash.com/400x300/?coffee,brooklyn" alt="Qahwah House Brooklyn">
           <div class="card-body">
-            <button
-              class="card-title-btn"
-              type="button"
+            <button class="card-title-btn" type="button"
               data-name="Qahwah House Brooklyn"
               data-location="Brooklyn"
               data-rating="TBD"
@@ -259,17 +237,13 @@
   <!-- MODAL -->
   <div class="modal" id="shopModal" aria-hidden="true">
     <div class="modal-overlay" data-close="true"></div>
-
     <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
       <button class="modal-close" type="button" aria-label="Close" data-close="true">×</button>
-
       <h3 class="modal-title" id="modalTitle"></h3>
       <p class="modal-subtitle" id="modalSubtitle"></p>
-
       <div class="modal-meta">
         <span class="modal-rating" id="modalRating"></span>
       </div>
-
       <p class="modal-description" id="modalDescription"></p>
     </div>
   </div>
@@ -286,7 +260,6 @@
       subtitleEl.textContent = btn.dataset.location || "";
       ratingEl.textContent = btn.dataset.rating ? `Rating: ${btn.dataset.rating}` : "";
       descEl.textContent = btn.dataset.description || "";
-
       modal.classList.add("is-open");
       modal.setAttribute("aria-hidden", "false");
       document.body.style.overflow = "hidden";
@@ -300,20 +273,12 @@
 
     document.addEventListener("click", (e) => {
       const btn = e.target.closest(".card-title-btn");
-      if (btn) {
-        openModal(btn);
-        return;
-      }
-
-      if (e.target.dataset.close === "true") {
-        closeModal();
-      }
+      if (btn) { openModal(btn); return; }
+      if (e.target.dataset.close === "true") { closeModal(); }
     });
 
     document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && modal.classList.contains("is-open")) {
-        closeModal();
-      }
+      if (e.key === "Escape" && modal.classList.contains("is-open")) closeModal();
     });
   </script>
 
