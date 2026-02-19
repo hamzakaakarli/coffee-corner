@@ -366,3 +366,87 @@ section > h2::after {
   .hero { padding: 70px 0 56px; }
   .nav a { margin-left: 16px; }
 }
+.card-title-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+  font-weight: 700;
+}
+
+.card-title-btn:hover {
+  text-decoration: underline;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 999;
+}
+
+.modal.is-open {
+  display: block;
+}
+
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.modal-card {
+  position: relative;
+  width: min(560px, calc(100% - 32px));
+  margin: 10vh auto 0;
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px 18px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  border: none;
+  background: none;
+  font-size: 28px;
+  cursor: pointer;
+  line-height: 1;
+  opacity: 0.7;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-title {
+  margin: 0 0 6px 0;
+  font-size: 1.35rem;
+}
+
+.modal-subtitle {
+  margin: 0 0 14px 0;
+  opacity: 0.75;
+}
+
+.modal-meta {
+  margin-bottom: 12px;
+}
+
+.modal-rating {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.06);
+  font-size: 0.95rem;
+}
+
+.modal-description {
+  margin: 0;
+  line-height: 1.6;
+}
