@@ -211,17 +211,17 @@ section > h2::after {
   padding: 0;
   margin-bottom: 12px;
   text-align: left;
-}
-.criteria h2::after { display: none; }
-
+  
 .criteria > p {
   color: #c4a882;
   font-weight: 300;
   font-size: 0.95rem;
-  max-width: 600px;
-  margin-bottom: 40px;
+  max-width: 650px;
+  margin: 0 auto 40px;   /* centers the block */
   line-height: 1.8;
+  text-align: center;    /* centers the text */
 }
+
 
 /* ✅ Centered, symmetrical criteria cards */
 .criteria-list {
